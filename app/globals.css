@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Use HSL triplets (this is what the tailwind config expects) */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --border: 217.2 32.6% 17.5%;
+    --primary: 191 97% 55%;
+
+    --radius: 14px;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground antialiased;
+  }
+
+  /* Optional: make links not default blue */
+  a {
+    @apply text-foreground/90 hover:text-foreground;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* offsets fixed navbar */
+}
+
+/* For sticky navbar offset when jumping to anchors */
+section[id] {
+  scroll-margin-top: 90px;
+}
