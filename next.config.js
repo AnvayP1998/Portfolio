@@ -1,10 +1,14 @@
-const isProd = process.env.NODE_ENV === "production";
+const isGhPages = process.env.DEPLOY_TARGET === "GH_PAGES";
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: isProd ? "/Portfolio" : "",
-  assetPrefix: isProd ? "/Portfolio/" : "",
-  images: { unoptimized: true }
+  // Only needed for GitHub Pages static export
+  ...(isGhPages ? { output: "export" } : {}),
+
+  basePath: isGhPages ? "/Portfolio" : "",
+  assetPrefix: isGhPages ? "/Portfolio/" : "",
+
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
