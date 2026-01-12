@@ -2,17 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================
+   Base theme tokens
+   ========================================================= */
 @layer base {
   :root {
-    /* Use HSL triplets (this is what the tailwind config expects) */
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --border: 217.2 32.6% 17.5%;
-    --primary: 191 97% 55%;
+    --background: 36 33% 97%;          /* warm off-white */
+    --foreground: 222 47% 11%;         /* slate-900-ish */
 
-    --radius: 14px;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --muted: 30 20% 93%;
+    --muted-foreground: 215 16% 35%;
+
+    --border: 220 13% 87%;
+
+    --primary: 221 83% 53%;            /* blue accent */
+    --primary-foreground: 0 0% 100%;
+
+    /* background effects */
+    --page-grain-opacity: 0.18;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 70%;
+
+    --border: 222 20% 20%;
+
+    --primary: 221 83% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --page-grain-opacity: 0.12;
   }
 
   html,
@@ -21,20 +49,85 @@
   }
 
   body {
-    @apply min-h-screen bg-background text-foreground antialiased;
+    @apply bg-background text-foreground;
   }
 
-  /* Optional: make links not default blue */
+  /* Softer default links */
   a {
     @apply text-foreground/90 hover:text-foreground;
   }
 }
+
+/* =========================================================
+   Scroll behavior
+   ========================================================= */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px; /* offsets fixed navbar */
+  scroll-padding-top: 90px;
 }
 
-/* For sticky navbar offset when jumping to anchors */
 section[id] {
   scroll-margin-top: 90px;
+}
+
+/* =========================================================
+   Utilities
+   ========================================================= */
+@layer utilities {
+
+  /* ---------- Page background wrapper ---------- */
+  .bg-page {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+    background:
+      /* soft blue */
+      radial-gradient(900px 520px at 16% 18%, rgba(59, 130, 246, 0.18), transparent 60%),
+      /* pink/purple */
+      radial-gradient(850px 520px at 84% 22%, rgba(217, 70, 239, 0.16), transparent 58%),
+      /* warm amber */
+      radial-gradient(900px 560px at 52% 82%, rgba(245, 158, 11, 0.18), transparent 62%),
+      /* cyan accent */
+      radial-gradient(700px 420px at 18% 92%, rgba(34, 211, 238, 0.14), transparent 60%),
+      /* base */
+      linear-gradient(
+        to bottom,
+        hsl(var(--background)),
+        hsl(var(--background))
+      );
+  }
+
+  /* ---------- Dark mode background ---------- */
+  .dark .bg-page {
+    background:
+      radial-gradient(900px 520px at 18% 18%, rgba(59, 130, 246, 0.22), transparent 62%),
+      radial-gradient(900px 520px at 82% 24%, rgba(168, 85, 247, 0.20), transparent 60%),
+      radial-gradient(1000px 620px at 52% 82%, rgba(245, 158, 11, 0.12), transparent 62%),
+      radial-gradient(900px 520px at 50% 50%, rgba(2, 6, 23, 0.6), transparent 65%),
+      linear-gradient(to bottom, #020617, #000000);
+  }
+
+  /* ---------- Grain / noise overlay (premium feel) ---------- */
+  .bg-page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: var(--page-grain-opacity);
+    mix-blend-mode: soft-light;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.20'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- Card baseline ---------- */
+  .card {
+    @apply rounded-3xl border border-border/60 bg-card/60 backdrop-blur text-card-foreground shadow-sm;
+  }
+}
+
+/* =========================================================
+   Polished selection color
+   ========================================================= */
+::selection {
+  background: rgba(59, 130, 246, 0.25);
 }
