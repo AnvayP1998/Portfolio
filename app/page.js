@@ -47,7 +47,7 @@ const projects = [
       "Built an end-to-end governance & compliance NLP system ingesting IDB/World Bank reports for risk extraction, topic modeling, sentiment scoring, and LLM summarization.",
       "Shipped a Flask dashboard; achieved 80% precision and 75% recall on governance risk classification.",
     ],
-    link: null,
+    link: "https://github.com/AnvayP1998/Text-guard",
   },
   {
     name: "Intelligent Task-Planning Copilot",
@@ -67,7 +67,7 @@ const projects = [
       "Built a modular framework combining Q-Learning + MCTS with reward shaping and state abstraction.",
       "Evaluated 500+ episodes; achieved ~40% improvement over random baselines and compared learning vs search strategies.",
     ],
-    link: "https://github.com/akm303/carcassonne-ai",
+    link: "https://github.com/AnvayP1998/carcassonne-ai",
   },
   {
     name: "AI-Driven Query Optimizer",
@@ -87,7 +87,7 @@ const projects = [
       "Engineered a distributed low-latency simulator with live order book, matching engine, and real-time visualizations.",
       "Integrated strategy bots and achieved <10ms end-to-end latency; exposed reliable REST APIs for automation.",
     ],
-    link: null,
+    link: "https://github.com/AnvayP1998/HFT_Simulator",
   },
   {
     name: "Telehealth Dashboard",
@@ -97,7 +97,7 @@ const projects = [
       "Built a Rust web app with Python analytics + MongoDB and Google Maps APIs for real-time filtering by location, rating, and specialty; improved decision efficiency by 30%.",
       "Implemented responsive UI, real-time ingestion, and optimized MongoDB queries (indexes + schema design) for low-latency lookup across thousands of records.",
     ],
-    link: null,
+    link: "https://github.com/AnvayP1998/Telehealth-Dashboard",
   },
 ];
 
