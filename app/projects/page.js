@@ -1,27 +1,39 @@
 const projects = [
   {
-    name: "TextGuard",
-    desc: "Governance & compliance risk detection with dashboard + summarization.",
+    name: "TextGuard Risk & Compliance",
+    desc: "Automated risk classifier for IDB Bank using DistilBERT fine-tuning, OpenAI/Gemini APIs, and Terraform-provisioned audit dashboards.",
     link: "https://github.com/AnvayP1998/Text-guard",
-    tags: ["NLP", "Flask", "LLM"],
+    tags: ["Python", "PyTorch", "Flask", "NLP", "Terraform"],
+  },
+  {
+    name: "DataInsight AI",
+    desc: "AI-driven data insights platform for exploratory analysis and intelligent reporting (GWU CSCI 6234 group project).",
+    link: "https://github.com/AnvayP1998/CSCI_6234_Spring_2026_G14",
+    tags: ["Python", "AI/ML", "Data Analytics"],
+  },
+  {
+    name: "SavorBridge",
+    desc: "Full-stack web application connecting users with curated food and dining experiences.",
+    link: "https://savorbridge.vercel.app/",
+    tags: ["Web", "Vercel"],
   },
   {
     name: "Carcassonne-AI",
-    desc: "AI agents and evaluation for gameplay strategies.",
+    desc: "Modular AI agents (Q-Learning + MCTS) for Carcassonne gameplay; ~40% improvement over random baselines across 500+ episodes.",
     link: "https://github.com/AnvayP1998/carcassonne-ai",
-    tags: ["Python", "AI Agents"],
+    tags: ["Python", "Q-Learning", "MCTS"],
   },
   {
     name: "HFT Simulator",
-    desc: "Order book & matching engine for market-making strategies.",
+    desc: "Distributed low-latency simulator with live order book, matching engine, and real-time visualizations; <10ms end-to-end latency.",
     link: "https://github.com/AnvayP1998/HFT_Simulator",
-    tags: ["Rust", "Systems"],
+    tags: ["C++", "Rust", "Systems"],
   },
   {
     name: "Telehealth Dashboard",
-    desc: "Dashboard for exploring telehealth services.",
+    desc: "Rust web app with Python analytics and MongoDB for real-time filtering by location, rating, and specialty.",
     link: "https://github.com/AnvayP1998/Telehealth-Dashboard",
-    tags: ["Web", "Data"],
+    tags: ["Rust", "Python", "MongoDB"],
   },
 ];
 
@@ -36,6 +48,7 @@ export default function ProjectsPage() {
             key={p.name}
             href={p.link}
             target="_blank"
+            rel="noreferrer"
             className="glass rounded-xl p-6 hover:glass-hover transition"
           >
             <h2 className="text-xl font-medium mb-2">{p.name}</h2>

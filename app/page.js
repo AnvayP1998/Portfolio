@@ -1,52 +1,62 @@
 import Link from "next/link";
 
 const roles = [
-  "Software Engineer",
+  "Full-Stack Engineer",
   "Backend Engineer",
+  "AI / LLM Engineer",
   "Infrastructure",
-  "ML Engineer",
   "Cloud Engineer",
 ];
 
 const experience = [
   {
+    title: "Student Project Assistant (Software Engineer)",
+    company: "George Washington University",
+    location: "Washington, DC",
+    dates: "Aug 2025 – May 2026",
+    bullets: [
+      "Cut data-validation errors 30% for 30+ users by building a Python framework that evaluates LLM outputs via the OpenAI API.",
+      "Cut reporting turnaround 50% by engineering a Python ETL pipeline that moves PostgreSQL data into Tableau dashboards.",
+    ],
+    tags: ["Python", "OpenAI API", "PostgreSQL", "ETL", "Tableau"],
+  },
+  {
     title: "Software Engineer",
-    company: "Phillip Capital India Pvt Ltd",
+    company: "PhillipCapital",
     location: "Mumbai, India",
     dates: "Sep 2022 – Jul 2024",
     bullets: [
-      "Modernized a multi‑asset trading platform on Azure and .NET by implementing asynchronous order routing and distributed caching, increasing throughput by \textbf{35\%} and reducing p99 latency by 30\%. ",
-      "Architected and deployed secure RESTful APIs with OAuth2 authentication, streamlining integration with external financial data providers and reducing integration time by 40\%. ",
-      "Refactored 20+ stored procedures and integrated Dapper ORM, cutting query times by 40\% and eliminating CPU spikes during peak trading. ",
-      "Led real-time dashboard development for unlisted share trading using .NET, Azure Jobs, and streaming feeds, boosting engagement among high-net-worth clients by 15\%. ",
-      "Engineered low‑latency order paths in C++17 and JavaScript, reducing tick‑to‑trade latency by 30\% and supporting HFT strategies. ",
-      "Coordinated 10+ cross-functional releases annually with CI/CD pipelines, mentored 2 junior developers, and improved deployment reliability while reducing production incidents. ",
-       ],
-    tags: [".NET", "Azure", "SQL Server", "C++", "JavaScript", "CI/CD"],
+      "Built a high-performance equity-trading dashboard in Go and React that processes real-time market feeds for brokers, cutting data latency 40%.",
+      "Cut p99 latency 30% and lifted throughput 35% for 10K+ users by re-architecting event-driven Python microservices with RabbitMQ messaging and Redis caching.",
+      "Accelerated partner-integration delivery 20% by designing OAuth2-secured REST APIs in Go and Python across 3 apps with object-oriented design and OpenAPI specs.",
+      "Architected a GraphQL service in Go that consolidated REST endpoints behind the trading UI for efficient real-time querying, cutting data payload 40% for active users.",
+      "Reduced client onboarding from days to minutes for 200+ clients by building an AI-native document-ingestion pipeline (Python, Azure AI Document Intelligence, OCR).",
+      "Deployed a Python anomaly-detection service to Kubernetes (AKS) that scored regulated trade-flow streams in real time, cutting compliance review 30% for 200+ clients.",
+    ],
+    tags: ["Go", "Python", "React", "RabbitMQ", "Redis", "GraphQL", "Kubernetes", "AWS"],
   },
   {
     title: "Junior Software Engineer",
-    company: "Phillip Capital India Pvt Ltd",
+    company: "PhillipCapital",
     location: "Mumbai, India",
     dates: "Apr 2021 – Aug 2022",
     bullets: [
-      "Built an automated eKYC and PMS onboarding platform using C\#, Azure Functions, and Cognitive Services, cutting verification errors by 50\% and doubling throughput. ",
-      "Developed a TypeScript-based real-time trade alert system, reducing customer support tickets by 30\% and improving system reliability. ",
-      "Implemented full encryption for sensitive financial data (at rest and in transit), ensuring compliance with SEC/CFTC regulatory standards. ",
-      "Engineered CI/CD pipelines with Jenkins and Git, achieving fully automated deployments and reducing manual deployment errors by 60\%. ",
-       ],
-    tags: ["C#", "Azure Functions", "TypeScript", "SQL"],
+      "Reduced document-extraction errors 50% by building a Python ingestion pipeline that ran Tesseract OCR and rule-based NLP over 5,000+ daily documents.",
+      "Drove a 30% engagement lift for 1,000+ users by shipping real-time Python alerting that flagged price and volume anomalies as they occurred.",
+      "Cut reporting query times 45% by tuning MS SQL Server with targeted indexing and query optimization.",
+    ],
+    tags: ["Python", "Tesseract OCR", "NLP", "MS SQL Server", "CI/CD"],
   },
 ];
 
 const projects = [
   {
     name: "TextGuard Risk & Compliance",
-    period: "Oct 2025 – Present",
-    stack: ["Python", "LLMs", "Flask", "NLP"],
+    period: "Oct 2025 – Dec 2025",
+    stack: ["Python", "PyTorch", "DistilBERT", "Flask", "scikit-learn", "Terraform", "OpenAI", "Gemini"],
     bullets: [
-      "Built an end-to-end governance & compliance NLP system ingesting IDB/World Bank reports for risk extraction, topic modeling, sentiment scoring, and LLM summarization.",
-      "Shipped a Flask dashboard; achieved 80% precision and 75% recall on governance risk classification.",
+      "Built an automated risk classifier for IDB Bank in Python/Flask using PyTorch DistilBERT fine-tuning with OpenAI/Gemini APIs as backup checks, cutting manual review 25%.",
+      "Engineered a scikit-learn evaluation pipeline (precision, recall, F1) with Terraform-provisioned audit dashboards, improving incident response time 40%.",
     ],
     link: "https://github.com/AnvayP1998/Text-guard",
   },
@@ -71,6 +81,26 @@ const projects = [
     link: "https://github.com/AnvayP1998/carcassonne-ai",
   },
   {
+    name: "DataInsight AI — RAG Knowledge Platform",
+    period: "Feb 2026 – Apr 2026",
+    stack: ["Python", "FastAPI", "React", "LangChain", "Elasticsearch", "RAG"],
+    bullets: [
+      "Built a full-stack RAG application (Python/FastAPI + React) using LangChain with embeddings and vector search to return grounded, cited answers in 2 seconds across 200+ documents.",
+      "Cut time-to-first-response 40x (12s → 300ms) by engineering multimodal ingestion (PDF, image/OCR, audio/video) with tuned chunking and Elasticsearch/vector retrieval.",
+    ],
+    link: "https://github.com/AnvayP1998/CSCI_6234_Spring_2026_G14",
+  },
+  {
+    name: "SavorBridge — Conversational AI Agent",
+    period: "Apr 2026",
+    stack: ["Next.js", "TypeScript", "Node.js", "Claude API", "LangChain"],
+    bullets: [
+      "Built a conversational AI agent (Next.js/TypeScript + Node.js) on the Claude API with agentic multi-step workflows and tool/function calling, collapsing a 30-minute task to 2 minutes for 42M+ users.",
+      "Designed structured-output prompt workflows evaluating 40+ data points per request, with guardrails for accuracy and human review.",
+    ],
+    link: "https://savorbridge.vercel.app/",
+  },
+  {
     name: "AI-Driven Query Optimizer",
     period: "Jul 2025 – Aug 2025",
     stack: ["Rust", "Python", "TypeScript", "PostgreSQL", "OpenTelemetry"],
@@ -92,21 +122,20 @@ const projects = [
   },
   {
     name: "Telehealth Dashboard",
-    period: "May 2025 – Jun 2025",
-    stack: ["Rust", "Python", "JavaScript", "MongoDB", "Google APIs"],
+    period: "Oct 2024 – Nov 2024",
+    stack: ["React", "TypeScript", "SSR", "Grafana"],
     bullets: [
-      "Built a Rust web app with Python analytics + MongoDB and Google Maps APIs for real-time filtering by location, rating, and specialty; improved decision efficiency by 30%.",
-      "Implemented responsive UI, real-time ingestion, and optimized MongoDB queries (indexes + schema design) for low-latency lookup across thousands of records.",
+      "Achieved 99.9% uptime under 1,000+ concurrent sessions by launching a responsive React/TypeScript app with SSR geolocation filtering, monitored via Grafana.",
     ],
     link: "https://github.com/AnvayP1998/Telehealth-Dashboard",
   },
 ];
 
 const skills = {
-  Languages: ["C++", "Rust", "Python", "JavaScript", "TypeScript", "SQL", "C#", "Bash", "HTML"],
-  Frameworks: ["FastAPI", "Node.js", ".NET Core", "React", "REST APIs", "Docker", "Kubernetes", "CI/CD"],
-  "Cloud/Systems": ["Azure", "AWS", "GCP", "Kafka", "Redis", "Distributed Messaging", "OpenTelemetry"],
-  "AI / Data": ["NLP", "LLMs", "LangChain", "ONNX", "POMDP", "Analytics Pipelines"],
+  "Languages & Full-Stack": ["Go", "Python", "TypeScript", "React", "Node.js", "REST APIs", "GraphQL", "Full-Stack Web"],
+  "AI & Agents": ["LLMs (OpenAI, Claude)", "LangChain", "AI Agents", "Tool/Function Calling", "RAG", "MCP"],
+  "Backend & Infrastructure": ["Microservices", "RabbitMQ", "Redis", "Stream Processing", "PostgreSQL", "MongoDB", "Caching"],
+  "Cloud & DevOps": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD", "Jenkins", "Git", "Grafana", "OpenTelemetry", "PySpark"],
 };
 
 export default function Home() {
@@ -123,11 +152,11 @@ export default function Home() {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-slate-900 dark:text-white">
-              Software Engineer building low-latency systems, cloud platforms, and production AI.
+              Full-Stack Engineer building LLM-powered apps, AI agents, and scalable backend infrastructure.
             </h1>
 
             <p className="mt-5 text-base sm:text-lg text-slate-700/80 dark:text-slate-200/70 max-w-2xl">
-              3+ years shipping trading systems, distributed infrastructure, and AI pipelines used in production.
+              3+ years shipping Go/Python backends, event-driven microservices, and production AI on AWS and Kubernetes. MS-CS candidate at GWU (May 2026).
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -310,10 +339,11 @@ export default function Home() {
 
         <Card className="mt-6" tint="rose">
           <p className="text-sm sm:text-base text-slate-700/85 dark:text-slate-200/70 leading-relaxed max-w-3xl">
-            I’m Anvay Paralikar — a software engineer focused on performance, reliability, and clean architecture.
-            I’ve built low-latency trading systems and scalable cloud services, and I’m currently pursuing an M.S.
-            in Computer Science at George Washington University. I enjoy roles where correctness, metrics, and
-            shipping matter.
+            I’m Anvay Paralikar — a Full-Stack Software Engineer and MS-CS candidate at GWU (May 2026) with 3+ years
+            building scalable full-stack tools and backend infrastructure in Go, Python, and React on AWS and Kubernetes.
+            I build LLM-powered applications and AI agents with tool/function-calling and agentic workflows, backed by
+            event-driven messaging, real-time data pipelines, and PostgreSQL. I optimize performance at scale, ship fast
+            with AI-assisted development, and have a strong interest in MCP-based tooling.
           </p>
         </Card>
       </section>
