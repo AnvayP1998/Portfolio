@@ -1,39 +1,39 @@
 import Link from "next/link";
 
 const roles = [
+  "AI Developer",
+  "AI Agent / Copilot Engineer",
   "Full-Stack Engineer",
   "Backend Engineer",
-  "AI / LLM Engineer",
-  "Infrastructure",
   "Cloud Engineer",
 ];
 
 const experience = [
   {
-    title: "Student Project Assistant (Software Engineer)",
+    title: "Project & Data Support Analyst, Physician Assistant Department",
     company: "George Washington University",
     location: "Washington, DC",
     dates: "Aug 2025 – May 2026",
     bullets: [
-      "Cut data-validation errors 30% for 30+ users by building a Python framework that evaluates LLM outputs via the OpenAI API.",
-      "Cut reporting turnaround 50% by engineering a Python ETL pipeline that moves PostgreSQL data into Tableau dashboards.",
+      "Faculty in the Physician Assistant Department needed to trust AI-generated reporting on student assessments before acting on it, so I built an evaluation harness (OpenAI API) with consistency scoring, prompt-engineered checks, and automated tests that catch inaccurate outputs before release, cutting manual errors by 30% for 30+ users.",
+      "Shipped Python ETL pipelines with monitoring that transform multi-table ExamSoft exam data from PostgreSQL into the Tableau analytics faculty rely on, cutting reporting turnaround by 50%.",
     ],
-    tags: ["Python", "OpenAI API", "PostgreSQL", "ETL", "Tableau"],
+    tags: ["Python", "OpenAI API", "Prompt Engineering", "PostgreSQL", "ETL", "Tableau"],
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer — Regulated FinTech Platform (10,000+ users)",
     company: "PhillipCapital",
     location: "Mumbai, India",
     dates: "Sep 2022 – Jul 2024",
     bullets: [
-      "Built a high-performance equity-trading dashboard in Go and React that processes real-time market feeds for brokers, cutting data latency 40%.",
-      "Cut p99 latency 30% and lifted throughput 35% for 10K+ users by re-architecting event-driven Python microservices with RabbitMQ messaging and Redis caching.",
-      "Accelerated partner-integration delivery 20% by designing OAuth2-secured REST APIs in Go and Python across 3 apps with object-oriented design and OpenAPI specs.",
-      "Architected a GraphQL service in Go that consolidated REST endpoints behind the trading UI for efficient real-time querying, cutting data payload 40% for active users.",
-      "Reduced client onboarding from days to minutes for 200+ clients by building an AI-native document-ingestion pipeline (Python, Azure AI Document Intelligence, OCR).",
-      "Deployed a Python anomaly-detection service to Kubernetes (AKS) that scored regulated trade-flow streams in real time, cutting compliance review 30% for 200+ clients.",
+      "Cut customer onboarding from days to minutes with a Python and Azure AI Document Intelligence extraction pipeline integrated into internal systems via REST, replacing manual data entry on PII-sensitive documents.",
+      "Built an intelligent automation service over 2.5–5M events/day that flags exceptions and escalates only high-risk cases to human reviewers with full audit logging, cutting manual review by 30% (≈15–20 hours/week).",
+      "Re-architected the platform into event-driven C#/.NET microservices using RabbitMQ and Redis, cutting p99 latency from 120ms to 84ms at 1,500–2,000 transactions/second for 10,000+ users.",
+      "Designed OAuth2 and JWT-secured REST APIs in C#/.NET and Python across 3 apps, with RBAC and TLS plus at-rest encryption protecting regulated data, accelerating delivery by 20%.",
+      "Built reusable components including a shared Python SDK, connectors, and CI/CD tooling that 3 product teams self-served, lifting release cadence to 10+ a year.",
+      "Containerized services to Kubernetes with Docker on Azure (AKS) and AWS, automating RDS snapshots and PostgreSQL exports to S3 with lifecycle policies, and wiring OpenTelemetry and Grafana monitoring that cut issue-detection time by 30%; mentored 2 engineers.",
     ],
-    tags: ["Go", "Python", "React", "RabbitMQ", "Redis", "GraphQL", "Kubernetes", "AWS"],
+    tags: ["C#", ".NET", "Python", "Azure AI", "RabbitMQ", "Redis", "OAuth2", "JWT", "Kubernetes", "Docker", "OpenTelemetry", "Grafana"],
   },
   {
     title: "Junior Software Engineer",
@@ -41,22 +41,33 @@ const experience = [
     location: "Mumbai, India",
     dates: "Apr 2021 – Aug 2022",
     bullets: [
-      "Reduced document-extraction errors 50% by building a Python ingestion pipeline that ran Tesseract OCR and rule-based NLP over 5,000+ daily documents.",
-      "Drove a 30% engagement lift for 1,000+ users by shipping real-time Python alerting that flagged price and volume anomalies as they occurred.",
-      "Cut reporting query times 45% by tuning MS SQL Server with targeted indexing and query optimization.",
+      "Built a Python pipeline running Tesseract OCR and rule-based NLP over 5,000+ daily documents, converting unstructured records into structured, queryable data and cutting extraction errors by 50%.",
+      "Cut PostgreSQL query times by 40%, dropping p95 latency from 1,200ms to 720ms across 20+ hot queries via EXPLAIN-plan profiling and composite indexing.",
+      "Drove a 30% engagement lift for 1,000+ users by building real-time C#/.NET and React alerting that surfaces anomalies the instant they happen.",
     ],
-    tags: ["Python", "Tesseract OCR", "NLP", "MS SQL Server", "CI/CD"],
+    tags: ["Python", "Tesseract OCR", "NLP", "PostgreSQL", "C#", ".NET", "React"],
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Taparia Tools",
+    location: "Nashik, India",
+    dates: "Jul 2020 – Nov 2020",
+    bullets: [
+      "Shipped a full-stack React, Node.js, and MongoDB data tool for 100+ machines end to end, replacing manual entry and cutting report time by 90%.",
+      "Reduced machine downtime by 15% by adding predictive-maintenance alerts that flag equipment faults before they cause failures.",
+    ],
+    tags: ["React", "Node.js", "MongoDB", "Full-Stack"],
   },
 ];
 
 const projects = [
   {
-    name: "TextGuard Risk & Compliance",
+    name: "Textguard — AI Risk & Compliance Classifier",
     period: "Oct 2025 – Dec 2025",
-    stack: ["Python", "PyTorch", "DistilBERT", "Flask", "scikit-learn", "Terraform", "OpenAI", "Gemini"],
+    stack: ["Python", "Flask", "PyTorch", "DistilBERT", "scikit-learn", "OpenAI", "Gemini"],
     bullets: [
-      "Built an automated risk classifier for IDB Bank in Python/Flask using PyTorch DistilBERT fine-tuning with OpenAI/Gemini APIs as backup checks, cutting manual review 25%.",
-      "Engineered a scikit-learn evaluation pipeline (precision, recall, F1) with Terraform-provisioned audit dashboards, improving incident response time 40%.",
+      "Compliance analysts at IDB Bank read every incoming document by hand to catch policy risks, so I built a web tool (Python, Flask) that scores each document and routes only the high-risk ones to a human reviewer, cutting manual review by 25%.",
+      "Fine-tuned a PyTorch DistilBERT model with OpenAI and Gemini APIs as fallback checks, and validated quality with a scikit-learn precision, recall, and F1 pipeline plus dashboards tracking accuracy and drift.",
     ],
     link: "https://github.com/AnvayP1998/Text-guard",
   },
@@ -81,19 +92,19 @@ const projects = [
     link: "https://github.com/AnvayP1998/carcassonne-ai",
   },
   {
-    name: "DataInsight AI — RAG Knowledge Platform",
+    name: "DataInsight AI — Production RAG Copilot",
     period: "Feb 2026 – Apr 2026",
-    stack: ["Python", "FastAPI", "React", "LangChain", "Elasticsearch", "RAG"],
+    stack: ["React", "FastAPI", "Python", "PostgreSQL", "Qdrant", "Claude API", "RAG"],
     bullets: [
-      "Built a full-stack RAG application (Python/FastAPI + React) using LangChain with embeddings and vector search to return grounded, cited answers in 2 seconds across 200+ documents.",
-      "Cut time-to-first-response 40x (12s → 300ms) by engineering multimodal ingestion (PDF, image/OCR, audio/video) with tuned chunking and Elasticsearch/vector retrieval.",
+      "Analysts lost minutes hunting for answers across 200+ scattered documents, so I built a full-stack AI platform (React, FastAPI, PostgreSQL, Qdrant) with an ingestion, chunking, embedding, and retrieval pipeline that answers questions with cited Claude responses in 2 seconds.",
+      "Engineered an async RAG pipeline streaming Claude API tokens over SSE that cut time-to-first-response 40x from 12 seconds to 300ms, tuning retrieval and model selection to control latency and token spend.",
     ],
     link: "https://github.com/AnvayP1998/CSCI_6234_Spring_2026_G14",
   },
   {
     name: "SavorBridge — Conversational AI Agent",
     period: "Apr 2026",
-    stack: ["Next.js", "TypeScript", "Node.js", "Claude API", "LangChain"],
+    stack: ["Next.js", "TypeScript", "Node.js", "Claude API", "Tool Calling", "Guardrails"],
     bullets: [
       "Built a conversational AI agent (Next.js/TypeScript + Node.js) on the Claude API with agentic multi-step workflows and tool/function calling, collapsing a 30-minute task to 2 minutes for 42M+ users.",
       "Designed structured-output prompt workflows evaluating 40+ data points per request, with guardrails for accuracy and human review.",
@@ -121,21 +132,23 @@ const projects = [
     link: "https://github.com/AnvayP1998/HFT_Simulator",
   },
   {
-    name: "Telehealth Dashboard",
+    name: "Telehealth Provider Dashboard — Patient-Facing Healthcare App",
     period: "Oct 2024 – Nov 2024",
     stack: ["React", "TypeScript", "SSR", "Grafana"],
     bullets: [
-      "Achieved 99.9% uptime under 1,000+ concurrent sessions by launching a responsive React/TypeScript app with SSR geolocation filtering, monitored via Grafana.",
+      "Patients had no simple way to find telehealth providers near them, so I built a responsive React and TypeScript web app that filters licensed providers by geolocation and surfaces the closest matches.",
+      "Held 99.9% uptime under 1,000+ concurrent users, monitored with Grafana dashboards tracking latency and availability.",
     ],
     link: "https://github.com/AnvayP1998/Telehealth-Dashboard",
   },
 ];
 
 const skills = {
-  "Languages & Full-Stack": ["Go", "Python", "TypeScript", "React", "Node.js", "REST APIs", "GraphQL", "Full-Stack Web"],
-  "AI & Agents": ["LLMs (OpenAI, Claude)", "LangChain", "AI Agents", "Tool/Function Calling", "RAG", "MCP"],
-  "Backend & Infrastructure": ["Microservices", "RabbitMQ", "Redis", "Stream Processing", "PostgreSQL", "MongoDB", "Caching"],
-  "Cloud & DevOps": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD", "Jenkins", "Git", "Grafana", "OpenTelemetry", "PySpark"],
+  "Languages & Frameworks": ["C#", ".NET", "ASP.NET", "Python", "TypeScript", "JavaScript", "SQL", "React", "Node.js", "FastAPI"],
+  "AI Agents & Copilots": ["LLM Agents", "Copilots", "Tool/Function Calling", "Prompt Engineering", "Guardrails", "Human-in-the-Loop"],
+  "RAG & Evaluation": ["RAG Pipelines", "Embeddings", "Chunking", "Vector Stores (Qdrant, pgvector)", "Evaluation Harnesses", "Cost Tuning"],
+  "LLM Platforms & Cloud": ["OpenAI", "Claude", "Gemini", "Azure (AKS, AI Document Intelligence)", "AWS (RDS, S3, Redshift)", "Docker", "Kubernetes"],
+  "Integration & Responsible AI": ["REST APIs", "Microservices", "OAuth 2.0", "JWT", "RBAC", "Encryption", "PII Handling", "Audit Logging", "Git", "CI/CD"],
 };
 
 export default function Home() {
@@ -152,11 +165,11 @@ export default function Home() {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-slate-900 dark:text-white">
-              Full-Stack Engineer building LLM-powered apps, AI agents, and scalable backend infrastructure.
+              AI Developer building agents, copilots, and RAG pipelines that replace manual work.
             </h1>
 
             <p className="mt-5 text-base sm:text-lg text-slate-700/80 dark:text-slate-200/70 max-w-2xl">
-              3+ years shipping Go/Python backends, event-driven microservices, and production AI on AWS and Kubernetes. MS-CS candidate at GWU (May 2026).
+              3+ years in regulated industry shipping Python and C#/.NET backends, LLM-powered automation, and responsible AI with human-in-the-loop review on Azure and AWS. MS-CS candidate at GWU (May 2026).
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -166,7 +179,7 @@ export default function Home() {
                 <span className="text-slate-900 dark:text-white">Available May 2026</span>
               </span>
 
-              {["Systems", "Cloud", "AI", "Performance"].map((t) => (
+              {["AI Agents", "RAG", "Copilots", "Responsible AI"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full px-3 py-1.5 text-sm shadow-sm ring-1 ring-black/5 dark:ring-white/10
@@ -229,9 +242,9 @@ export default function Home() {
           {/* Metrics */}
           <div className="lg:col-span-4">
             <div className="grid gap-3">
-              <Metric title="3+ Years" desc="Professional software engineering experience" />
-              <Metric title="35%+" desc="Throughput gains in production trading systems" />
-              <Metric title="10+" desc="Projects across systems, cloud & AI" />
+              <Metric title="3+ Years" desc="Software engineering in regulated, production environments" />
+              <Metric title="40x" desc="RAG pipeline latency reduction (12s → 300ms)" />
+              <Metric title="5M+" desc="Events/day processed with audit-logged AI automation" />
             </div>
           </div>
         </div>
@@ -339,11 +352,11 @@ export default function Home() {
 
         <Card className="mt-6" tint="rose">
           <p className="text-sm sm:text-base text-slate-700/85 dark:text-slate-200/70 leading-relaxed max-w-3xl">
-            I’m Anvay Paralikar — a Full-Stack Software Engineer and MS-CS candidate at GWU (May 2026) with 3+ years
-            building scalable full-stack tools and backend infrastructure in Go, Python, and React on AWS and Kubernetes.
-            I build LLM-powered applications and AI agents with tool/function-calling and agentic workflows, backed by
-            event-driven messaging, real-time data pipelines, and PostgreSQL. I optimize performance at scale, ship fast
-            with AI-assisted development, and have a strong interest in MCP-based tooling.
+            I’m Anvay Paralikar — an AI Developer and MS-CS candidate at GWU (May 2026) with 3+ years of software
+            development in regulated industry, building AI agents, copilots, and intelligent automation that replace
+            manual work. I develop prompts, RAG pipelines, knowledge grounding, and tool integrations in Python and
+            C#/.NET, deploy on Azure through CI/CD, and apply responsible AI practices covering PII handling,
+            human-in-the-loop review, and audit logging to production assistants.
           </p>
         </Card>
       </section>
@@ -392,8 +405,8 @@ export default function Home() {
             <div className="mt-4 space-y-2 text-sm text-slate-700/85 dark:text-slate-200/70">
               <p>
                 <span className="text-slate-700/70 dark:text-slate-200/60">Email:</span>{" "}
-                <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="mailto:anvay.paralikar@gwu.edu">
-                  anvay.paralikar@gwu.edu
+                <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="mailto:anvay.paralikar98@gmail.com">
+                  anvay.paralikar98@gmail.com
                 </a>
               </p>
               <p>
@@ -406,6 +419,12 @@ export default function Home() {
                 <span className="text-slate-700/70 dark:text-slate-200/60">LinkedIn:</span>{" "}
                 <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="https://linkedin.com/in/anvayparalikar" target="_blank" rel="noreferrer">
                   linkedin.com/in/anvayparalikar
+                </a>
+              </p>
+              <p>
+                <span className="text-slate-700/70 dark:text-slate-200/60">Phone:</span>{" "}
+                <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="tel:+15714570595">
+                  +1 (571) 457-0595
                 </a>
               </p>
             </div>
