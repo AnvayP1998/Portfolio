@@ -1,39 +1,39 @@
 import Link from "next/link";
 
 const roles = [
-  "AI Developer",
-  "AI Agent / Copilot Engineer",
+  "Software Engineer",
   "Full-Stack Engineer",
   "Backend Engineer",
+  "AI / LLM Engineer",
   "Cloud Engineer",
 ];
 
 const experience = [
   {
-    title: "Project & Data Support Analyst, Physician Assistant Department",
+    title: "AI Engineer, Project Assistant",
     company: "George Washington University",
     location: "Washington, DC",
     dates: "Aug 2025 – May 2026",
     bullets: [
-      "Faculty in the Physician Assistant Department needed to trust AI-generated reporting on student assessments before acting on it, so I built an evaluation harness (OpenAI API) with consistency scoring, prompt-engineered checks, and automated tests that catch inaccurate outputs before release, cutting manual errors by 30% for 30+ users.",
-      "Shipped Python ETL pipelines with monitoring that transform multi-table ExamSoft exam data from PostgreSQL into the Tableau analytics faculty rely on, cutting reporting turnaround by 50%.",
+      "Built an evaluation harness (Python, OpenAI API) with consistency scoring and automated tests, catching inaccurate AI-generated assessment reports before faculty acted on them and cutting manual errors 30% for 30+ users.",
+      "Shipped Python ETL pipelines using SQLAlchemy to transform multi-table exam data from PostgreSQL into the Tableau analytics faculty relied on, cutting reporting turnaround 50%.",
     ],
-    tags: ["Python", "OpenAI API", "Prompt Engineering", "PostgreSQL", "ETL", "Tableau"],
+    tags: ["Python", "OpenAI API", "SQLAlchemy", "PostgreSQL", "ETL", "Tableau"],
   },
   {
-    title: "Software Engineer — Regulated FinTech Platform (10,000+ users)",
+    title: "Software Engineer — Phillip9 Multi-Asset Trading Platform (10,000+ users)",
     company: "PhillipCapital",
     location: "Mumbai, India",
     dates: "Sep 2022 – Jul 2024",
     bullets: [
-      "Cut customer onboarding from days to minutes with a Python and Azure AI Document Intelligence extraction pipeline integrated into internal systems via REST, replacing manual data entry on PII-sensitive documents.",
-      "Built an intelligent automation service over 2.5–5M events/day that flags exceptions and escalates only high-risk cases to human reviewers with full audit logging, cutting manual review by 30% (≈15–20 hours/week).",
-      "Re-architected the platform into event-driven C#/.NET microservices using RabbitMQ and Redis, cutting p99 latency from 120ms to 84ms at 1,500–2,000 transactions/second for 10,000+ users.",
-      "Designed OAuth2 and JWT-secured REST APIs in C#/.NET and Python across 3 apps, with RBAC and TLS plus at-rest encryption protecting regulated data, accelerating delivery by 20%.",
-      "Built reusable components including a shared Python SDK, connectors, and CI/CD tooling that 3 product teams self-served, lifting release cadence to 10+ a year.",
-      "Containerized services to Kubernetes with Docker on Azure (AKS) and AWS, automating RDS snapshots and PostgreSQL exports to S3 with lifecycle policies, and wiring OpenTelemetry and Grafana monitoring that cut issue-detection time by 30%; mentored 2 engineers.",
+      "Built backend services (Python, React, Amazon RDS for PostgreSQL) powering Portfolio Management, with real-time P&L, ledger, and margin tracking for 10,000+ users, building for strict consistency on a regulated, multi-asset platform.",
+      "Built and operated a machine learning pipeline (Python) in production on AWS processing 2.5–5M events/day; re-tuned it to escalate borderline cases to a human reviewer instead of auto-clearing them, cutting manual review 30% for 200+ clients.",
+      "Re-architected a monolithic order-management system into event-driven microservices (C#/.NET, Docker, Amazon EventBridge) on Amazon ECS after market-open load exposed failures no test had caught, cutting p99 latency from 120ms to 84ms at 1,500–2,000 transactions/second.",
+      "Built REST APIs (C#/.NET, Python) on AWS API Gateway across 3 applications on one shared contract instead of 3 conflicting integrations, defining the technical standard other teams built against.",
+      "Built a shared Python SDK and CI/CD pipeline (Docker, Git, Datadog) adopted by 3 teams instead of each solving the same integration problem independently, lifting release cadence to 10+ a year and mentoring 2 engineers.",
+      "Built a Python document-extraction pipeline using an AI-powered OCR service, storing processed records in Amazon S3, cutting client onboarding from days to minutes for 200+ clients.",
     ],
-    tags: ["C#", ".NET", "Python", "Azure AI", "RabbitMQ", "Redis", "OAuth2", "JWT", "Kubernetes", "Docker", "OpenTelemetry", "Grafana"],
+    tags: ["Python", "React", "C#", ".NET", "Amazon ECS", "EventBridge", "RDS", "PostgreSQL", "Docker", "Datadog", "CI/CD"],
   },
   {
     title: "Junior Software Engineer",
@@ -41,17 +41,18 @@ const experience = [
     location: "Mumbai, India",
     dates: "Apr 2021 – Aug 2022",
     bullets: [
-      "Built a Python pipeline running Tesseract OCR and rule-based NLP over 5,000+ daily documents, converting unstructured records into structured, queryable data and cutting extraction errors by 50%.",
-      "Cut PostgreSQL query times by 40%, dropping p95 latency from 1,200ms to 720ms across 20+ hot queries via EXPLAIN-plan profiling and composite indexing.",
-      "Drove a 30% engagement lift for 1,000+ users by building real-time C#/.NET and React alerting that surfaces anomalies the instant they happen.",
+      "Built real-time price and volume alerts (C#/.NET, Amazon SNS, React) powering Phillip9's personalized watchlists, driving a 30% engagement lift for 1,000+ users.",
+      "Cut PostgreSQL p95 latency from 1,200ms to 720ms across 20+ hot queries on Amazon RDS via EXPLAIN-plan profiling and composite indexing.",
+      "Built a Python pipeline running Tesseract OCR and rule-based NLP over 5,000+ daily documents, cutting extraction errors 50%.",
+      "Automated the Git deploy workflow with regression test gates to catch bad builds before they reached production, reducing manual release effort 60%.",
     ],
-    tags: ["Python", "Tesseract OCR", "NLP", "PostgreSQL", "C#", ".NET", "React"],
+    tags: ["C#", ".NET", "React", "Amazon SNS", "Python", "PostgreSQL", "Tesseract OCR", "NLP", "Git"],
   },
   {
     title: "Software Engineer Intern",
     company: "Taparia Tools",
     location: "Nashik, India",
-    dates: "Jul 2020 – Nov 2020",
+    dates: "Jan 2020 – Jun 2020",
     bullets: [
       "Shipped a full-stack React, Node.js, and MongoDB data tool for 100+ machines end to end, replacing manual entry and cutting report time by 90%.",
       "Reduced machine downtime by 15% by adding predictive-maintenance alerts that flag equipment faults before they cause failures.",
@@ -61,6 +62,26 @@ const experience = [
 ];
 
 const projects = [
+  {
+    name: "AI-Powered PR Review Assistant",
+    period: "Jul 2026 – Aug 2026",
+    stack: ["Python", "LangChain", "LangGraph", "MCP", "SQLAlchemy", "PostgreSQL", "Gemini", "Groq", "ChromaDB", "LangSmith"],
+    bullets: [
+      "Built an AI-powered GitHub PR reviewer using Gemini and Groq LLMs, with SQLAlchemy and PostgreSQL storing PR history and metadata, deployed to 15+ open source repositories and catching 12 production bugs across 200+ weekly pull requests.",
+      "Built an evaluation framework (LangSmith, ChromaDB-powered RAG) benchmarked against 500 historical pull requests, improving precision from 45% to 82%.",
+    ],
+    link: null,
+  },
+  {
+    name: "Clinical Conversation Agent — Autonomous Patient Check-Ins",
+    period: "Jun 2026 – Jul 2026",
+    stack: ["Python", "FastAPI", "Claude API", "Agentic Workflows", "State Machine"],
+    bullets: [
+      "Designed an agentic workflow with a state-machine planner coordinating multi-step reasoning over a structured patient record, enabling autonomous post-discharge medication check-ins.",
+      "Built a 30-case adversarial evaluation suite measuring clinical-safety violations such as unauthorized advice and missed escalation, raising the guardrail pass rate from 71% to 96% over four rounds.",
+    ],
+    link: null,
+  },
   {
     name: "Textguard — AI Risk & Compliance Classifier",
     period: "Oct 2025 – Dec 2025",
@@ -144,11 +165,11 @@ const projects = [
 ];
 
 const skills = {
-  "Languages & Frameworks": ["C#", ".NET", "ASP.NET", "Python", "TypeScript", "JavaScript", "SQL", "React", "Node.js", "FastAPI"],
-  "AI Agents & Copilots": ["LLM Agents", "Copilots", "Tool/Function Calling", "Prompt Engineering", "Guardrails", "Human-in-the-Loop"],
-  "RAG & Evaluation": ["RAG Pipelines", "Embeddings", "Chunking", "Vector Stores (Qdrant, pgvector)", "Evaluation Harnesses", "Cost Tuning"],
-  "LLM Platforms & Cloud": ["OpenAI", "Claude", "Gemini", "Azure (AKS, AI Document Intelligence)", "AWS (RDS, S3, Redshift)", "Docker", "Kubernetes"],
-  "Integration & Responsible AI": ["REST APIs", "Microservices", "OAuth 2.0", "JWT", "RBAC", "Encryption", "PII Handling", "Audit Logging", "Git", "CI/CD"],
+  "Languages & Frameworks": ["Python", "TypeScript", "JavaScript", "React", "Next.js", "FastAPI", "SQLAlchemy", "C#", ".NET", "SQL"],
+  "AI-Assisted Development": ["Cursor", "Claude", "Gemini", "GitHub Copilot", "LLM Integration"],
+  "Backend & Data": ["REST APIs", "Microservices", "PostgreSQL", "Redis", "Event-Driven Architecture"],
+  "Cloud & DevOps": ["AWS (EC2, ECS, RDS, EventBridge)", "Docker", "Kubernetes", "Datadog", "CI/CD", "Git"],
+  "Practices": ["Distributed Systems", "Ledger & Financial-Integrity Systems", "Mentoring", "Cross-Functional Collaboration"],
 };
 
 export default function Home() {
@@ -165,11 +186,11 @@ export default function Home() {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-slate-900 dark:text-white">
-              AI Developer building agents, copilots, and RAG pipelines that replace manual work.
+              Software Engineer building full-stack systems for high-stakes, regulated platforms.
             </h1>
 
             <p className="mt-5 text-base sm:text-lg text-slate-700/80 dark:text-slate-200/70 max-w-2xl">
-              3+ years in regulated industry shipping Python and C#/.NET backends, LLM-powered automation, and responsible AI with human-in-the-loop review on Azure and AWS. MS-CS candidate at GWU (May 2026).
+              3+ years shipping ledger, P&amp;L, and margin systems at 1,500–2,000 tx/sec for 10,000+ users. I work across React, TypeScript, Python, and PostgreSQL, use Cursor and Claude daily, and drive platform adoption across teams. MS-CS graduate, GWU (May 2026).
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -179,7 +200,7 @@ export default function Home() {
                 <span className="text-slate-900 dark:text-white">Available May 2026</span>
               </span>
 
-              {["AI Agents", "RAG", "Copilots", "Responsible AI"].map((t) => (
+              {["Full-Stack", "Distributed Systems", "AI / LLM", "PostgreSQL"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full px-3 py-1.5 text-sm shadow-sm ring-1 ring-black/5 dark:ring-white/10
@@ -242,9 +263,9 @@ export default function Home() {
           {/* Metrics */}
           <div className="lg:col-span-4">
             <div className="grid gap-3">
-              <Metric title="3+ Years" desc="Software engineering in regulated, production environments" />
-              <Metric title="40x" desc="RAG pipeline latency reduction (12s → 300ms)" />
-              <Metric title="5M+" desc="Events/day processed with audit-logged AI automation" />
+              <Metric title="3+ Years" desc="Software engineering in regulated, production FinTech" />
+              <Metric title="1,500–2K" desc="Transactions/sec on the Phillip9 multi-asset platform" />
+              <Metric title="10,000+" desc="Users across production ledger, P&L, and margin systems" />
             </div>
           </div>
         </div>
@@ -352,11 +373,12 @@ export default function Home() {
 
         <Card className="mt-6" tint="rose">
           <p className="text-sm sm:text-base text-slate-700/85 dark:text-slate-200/70 leading-relaxed max-w-3xl">
-            I’m Anvay Paralikar — an AI Developer and MS-CS candidate at GWU (May 2026) with 3+ years of software
-            development in regulated industry, building AI agents, copilots, and intelligent automation that replace
-            manual work. I develop prompts, RAG pipelines, knowledge grounding, and tool integrations in Python and
-            C#/.NET, deploy on Azure through CI/CD, and apply responsible AI practices covering PII handling,
-            human-in-the-loop review, and audit logging to production assistants.
+            I’m Anvay Paralikar — a Software Engineer and MS-CS graduate (GWU, May 2026) with 3+ years building
+            full-stack and backend systems for a regulated, high-stakes financial platform: ledger, P&amp;L, and margin
+            systems requiring strict consistency for 10,000+ users, and high-volume transaction processing at
+            1,500–2,000 transactions per second. I work across React, TypeScript, Python, and PostgreSQL, use Cursor
+            and Claude daily as real collaborators in how I build, and I’ve driven adoption of a shared platform across
+            teams and mentored engineers instead of just shipping my own tasks.
           </p>
         </Card>
       </section>
