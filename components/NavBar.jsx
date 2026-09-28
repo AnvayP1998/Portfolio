@@ -10,7 +10,6 @@ const nav = [
   { href: "/#projects", label: "Projects" },
   { href: "/#skills", label: "Skills" },
   { href: "/#about", label: "About" },
-  { href: "/#resume", label: "Resume" },
   { href: "/#contact", label: "Contact" },
 ];
 

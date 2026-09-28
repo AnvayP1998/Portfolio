@@ -13,12 +13,10 @@ export default function ResumePage() {
         </a>
       </div>
 
-      <div className="glass rounded-2xl overflow-hidden border border-border/60">
-        <iframe
-          title="Resume"
-          src="/resume.pdf"
-          className="h-[80vh] w-full"
-        />
+      <div className="glass rounded-2xl p-8 border border-border/60">
+        <p className="text-muted-foreground">
+          Download my resume as a PDF using the button above.
+        </p>
       </div>
     </section>
   );
