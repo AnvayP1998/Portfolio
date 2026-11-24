@@ -31,10 +31,10 @@ export default function ExperiencePage() {
         <h2 className="text-2xl font-semibold">Software Engineer — Accenture</h2>
         <p className="text-muted-foreground mt-1">Apr 2020 – Mar 2021</p>
         <ul className="list-disc pl-5 mt-4 space-y-2 text-muted-foreground">
-          <li>Delivered patient onboarding and appointment workflows using Java 11 and Spring Boot for 75,000+ patients.</li>
-          <li>Modernized legacy frontend components from Angular 8 to Angular 11.</li>
-          <li>Secured EHR, prescription, and lab REST APIs with Spring Security, OAuth 2.0, JWT, and RBAC.</li>
-          <li>Tuned MongoDB and added Redis caching, keeping average API response times below 700 ms at peak.</li>
+          <li>Designed high-throughput RESTful microservices using Python FastAPI and Pydantic, boosting API query throughput by 15%.</li>
+          <li>Developed reusable React components for patient registration, appointment search, and provider availability, keeping page loads under 2 seconds.</li>
+          <li>Fine-tuned Transformer models on medical billing sheets with PyTorch and Hugging Face, improving classification accuracy by 25%.</li>
+          <li>Engineered a Redis caching layer for a Node.js backend, cutting average API latency from 5s to under 220ms (95.6% improvement).</li>
         </ul>
       </div>
 

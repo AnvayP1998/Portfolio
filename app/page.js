@@ -36,13 +36,12 @@ const experience = [
     location: "India",
     dates: "Apr 2020 – Mar 2021",
     bullets: [
-      "Delivered patient onboarding and appointment management workflows for an enterprise healthcare platform using Java 11 and Spring Boot, supporting clinical operations for 75,000+ patients across multi-specialty healthcare facilities.",
-      "Modernized legacy frontend components from Angular 8 to Angular 11, refactoring reusable UI modules, integrating Spring Boot REST APIs, and improving application maintainability, performance, and consistency across patient onboarding and appointment management workflows.",
-      "Secured REST APIs for electronic health record integrations, prescription requests, and laboratory result retrieval using Spring Security, OAuth 2.0, JWT authentication, and role-based access control (RBAC) to meet healthcare compliance requirements.",
-      "Tuned MongoDB collections and introduced Redis caching for frequently accessed patient records and provider schedules, reducing average API response times to below 700 milliseconds during peak operational hours.",
-      "Established automated testing suites using Jest, React Testing Library (RTL), JUnit 5, Mockito, and TestContainers for API validation, component testing, and integration testing, reducing defects and increasing release confidence during UAT cycles.",
+      "Designed high-throughput RESTful microservices using Python FastAPI and Pydantic within an Agile SDLC, boosting API query throughput by 15% and cutting latency on high-traffic healthcare analytics endpoints.",
+      "Developed reusable React components with JavaScript/ES6 for patient registration, appointment search, and provider availability, keeping page-load times below 2 seconds across high-use clinical workflows.",
+      "Fine-tuned domain-specific Transformer architectures on medical billing sheets using PyTorch and Hugging Face, accelerating model convergence and improving downstream text classification accuracy by 25%.",
+      "Engineered a Redis caching layer for a high-traffic Node.js backend, reducing average API latency from 5s to under 220ms (95.6% improvement) and optimizing slow running queries, stabilizing system throughput.",
     ],
-    tags: ["Java 11", "Spring Boot", "Angular", "Spring Security", "OAuth 2.0", "JWT", "MongoDB", "Redis", "JUnit 5"],
+    tags: ["Python", "FastAPI", "Pydantic", "React", "JavaScript", "PyTorch", "Hugging Face", "Node.js", "Redis"],
   },
 ];
 
