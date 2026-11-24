@@ -7,9 +7,15 @@ const projects = [
   },
   {
     name: "DataInsight AI",
-    desc: "AI-driven data insights platform for exploratory analysis and intelligent reporting (GWU CSCI 6234 group project).",
+    desc: "Full-stack RAG platform for financial research returning cited, traceable answers across 200+ documents in 2 seconds; async SSE streaming cut time-to-first-response 40x (12s to 300ms).",
     link: "https://github.com/AnvayP1998/CSCI_6234_Spring_2026_G14",
-    tags: ["Python", "AI/ML", "Data Analytics"],
+    tags: ["FastAPI", "PostgreSQL", "Qdrant", "RAG"],
+  },
+  {
+    name: "Clinical Conversation Agent",
+    desc: "Multi-turn clinical conversation API (FastAPI + Claude) with a state-machine planner for post-discharge check-ins; 30-case adversarial eval harness raised guardrail pass rate from 70% to 88%.",
+    link: "https://github.com/AnvayP1998/ClinicalConversation",
+    tags: ["Python", "FastAPI", "Claude", "LangSmith"],
   },
   {
     name: "SavorBridge",

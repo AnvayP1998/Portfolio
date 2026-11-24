@@ -2,33 +2,33 @@ import Link from "next/link";
 
 const experience = [
   {
-    title: "Software Engineer (Contract)",
-    company: "Walmart",
+    title: "Software Engineer",
+    company: "Walmart Global Tech",
     location: "Herndon, VA",
     dates: "Jan 2026 – Present",
     bullets: [
-      "Developed React and Next.js features for Walmart's associate support application, creating JavaScript components for conversational search, AI summaries, source references, feedback, and accessible navigation across 20+ reusable UI components.",
-      "Extended Node.js BFF services connecting the associate application with internal APIs and AI services, handling user context, request validation, GraphQL queries, and response transformation across 6+ backend services.",
-      "Added Python services for RAG data preparation, splitting source documents into searchable chunks, generating embeddings, applying metadata filters, and preparing retrieval context for LLM requests across 700K+ indexed documents.",
-      "Investigated production failures across AI requests and web services, tracing bottlenecks through retrieval calls using OpenTelemetry and resolving 30+ incidents through targeted root-cause fixes in the Python and C# codebases.",
-      "Supported Docker deployments and GitHub Actions pipelines, reviewed React, Node.js, and Python changes, documented application flows, and contributed to API design and maintainability practices across the development team.",
+      "Contributed to backend development for Sparky, Walmart's AI-powered shopping assistant, enabling conversational product discovery, review summarization, product comparisons, and personalized shopping recommendations through integrated retail data and generative AI services.",
+      "Architected Java 17 and Spring Boot microservices connecting LLM workflows with product catalog, pricing, availability, and customer-context services through REST APIs, reusable design patterns, and asynchronous event processing.",
+      "Engineered Python-based retrieval pipelines combining product metadata, review content, embedding generation, and hybrid search with reranking to ground LLM responses in relevant catalog information, improving top-five retrieval relevance by 18%.",
+      "Orchestrated specialized AI agents and tool-calling workflows for product comparison, review synthesis, and shopping-list generation using LangGraph, MCP integrations, prompt engineering, context management, and structured outputs, reducing multi-step request completion time by 20%.",
+      "Optimized response quality and inference efficiency through LLM evaluation, grounding checks, prompt-injection safeguards, fallback handling, and Redis-based caching, reducing unnecessary model calls by 15% and lowering p95 response latency by 250 ms.",
     ],
-    tags: ["React", "Next.js", "Node.js", "Python", "C#", "GraphQL", "RAG", "OpenTelemetry", "Docker", "GitHub Actions"],
+    tags: ["Java 17", "Spring Boot", "Python", "LangGraph", "MCP", "RAG", "Hybrid Search", "Redis", "Microservices"],
   },
   {
     title: "Software Engineer II",
     company: "Phillip Capital",
-    location: "Mumbai, India",
+    location: "India",
     dates: "Apr 2021 – Jul 2024",
     bullets: [
-      "Developed C#/.NET services for the order lifecycle, separating validation, routing, execution, and position updates into focused service components that processed 2,000+ NSE/BSE transactions per second.",
-      "Extended ASP.NET Core REST APIs for brokerage, portfolio, and settlement integrations, defining versioned contracts, validation rules, and idempotent request handling that reduced duplicate-order investigations from hours to under 30 minutes.",
-      "Tuned PostgreSQL and Entity Framework data access through execution-plan analysis, indexing, and transaction-aware query design, bringing 20+ frequently used portfolio and transaction queries below 200 milliseconds.",
-      "Introduced Redis for frequently accessed positions and reference data, with RabbitMQ processing reconciliation and notification jobs asynchronously, reducing daily reconciliation processing from 45 minutes to 12 minutes.",
-      "Developed Python scripts and Go utilities for trade reconciliation, matching executed trades against settlement and ledger records across database extracts and files, saving operations teams roughly 10 hours each week.",
-      "Led the development of React and JavaScript interfaces for order status and portfolio positions, mentoring 2 junior engineers to deliver a consolidated dashboard that supported operations teams across 10,000+ customer accounts.",
+      "Developed components of a futures trading and clearing platform using Java 11, Spring Boot, and microservices, applying object-oriented design and design patterns to handle trade capture, order validation, account allocation, and position updates across exchange-traded futures and options.",
+      "Accelerated trade processing throughput by 2x through Apache Kafka event-driven workflows, Redis caching, and thread-based parallel execution, reducing average inter-service response latency by 180 ms across high-volume transaction workflows.",
+      "Automated pre-trade risk validation and margin calculation using Java, integrating customer balances, open positions, contract specifications, and exchange margin requirements, resulting in 35% less manual risk-review effort and more consistent trading limit enforcement.",
+      "Streamlined trade reconciliation from 45 minutes to 12 minutes by implementing Java-based matching services with hash maps, batch processing, Oracle, and PostgreSQL, enabling faster identification of discrepancies between execution records and clearing statements.",
+      "Created responsive Angular and TypeScript interfaces for trade monitoring, customer positions, and reconciliation exceptions, integrating Spring Boot REST APIs and cutting manual navigation and report preparation effort by 30% for operations teams.",
+      "Reduced annual infrastructure costs by approximately $25K by streamlining deployment of 12+ backend microservices using AWS, Docker, Kubernetes, Jenkins, and Terraform, alongside automated provisioning and more efficient resource utilization.",
     ],
-    tags: ["C#", ".NET", "ASP.NET Core", "PostgreSQL", "Redis", "RabbitMQ", "Python", "Go", "React"],
+    tags: ["Java 11", "Spring Boot", "Kafka", "Redis", "Oracle", "PostgreSQL", "Angular", "TypeScript", "AWS", "Kubernetes", "Terraform"],
   },
   {
     title: "Software Engineer",
@@ -36,12 +36,13 @@ const experience = [
     location: "India",
     dates: "Apr 2020 – Mar 2021",
     bullets: [
-      "Enhanced patient onboarding and appointment workflows using C# REST APIs, JWT authentication, and RBAC, adding validation and service integrations that supported 75K+ patient profiles across multi-specialty healthcare facilities.",
-      "Developed reusable React components with JavaScript/ES6 for patient registration, appointment search, and provider availability, keeping page-load times below 2 seconds across high-use clinical workflows.",
-      "Integrated electronic health record, prescription, and laboratory systems with Python and FastAPI, automating clinical data across applications and eliminating approximately 20 hours of manual reconciliation work each month.",
-      "Reworked Microsoft SQL Server queries, database indexes, and relational mappings for patient and appointment searches, reducing average query execution from 1.4 seconds to approximately 500 milliseconds.",
+      "Delivered patient onboarding and appointment management workflows for an enterprise healthcare platform using Java 11 and Spring Boot, supporting clinical operations for 75,000+ patients across multi-specialty healthcare facilities.",
+      "Modernized legacy frontend components from Angular 8 to Angular 11, refactoring reusable UI modules, integrating Spring Boot REST APIs, and improving application maintainability, performance, and consistency across patient onboarding and appointment management workflows.",
+      "Secured REST APIs for electronic health record integrations, prescription requests, and laboratory result retrieval using Spring Security, OAuth 2.0, JWT authentication, and role-based access control (RBAC) to meet healthcare compliance requirements.",
+      "Tuned MongoDB collections and introduced Redis caching for frequently accessed patient records and provider schedules, reducing average API response times to below 700 milliseconds during peak operational hours.",
+      "Established automated testing suites using Jest, React Testing Library (RTL), JUnit 5, Mockito, and TestContainers for API validation, component testing, and integration testing, reducing defects and increasing release confidence during UAT cycles.",
     ],
-    tags: ["C#", "JWT", "RBAC", "React", "Python", "FastAPI", "SQL Server"],
+    tags: ["Java 11", "Spring Boot", "Angular", "Spring Security", "OAuth 2.0", "JWT", "MongoDB", "Redis", "JUnit 5"],
   },
 ];
 
@@ -59,10 +60,10 @@ const projects = [
   {
     name: "Clinical Conversation Agent — Autonomous Patient Check-Ins",
     period: "Jun 2026 – Jul 2026",
-    stack: ["Python", "FastAPI", "Claude API", "Agentic Workflows", "State Machine"],
+    stack: ["Python", "FastAPI", "Claude API", "LangSmith", "State Machine"],
     bullets: [
-      "Designed an agentic workflow with a state-machine planner coordinating multi-step reasoning over a structured patient record, enabling autonomous post-discharge medication check-ins.",
-      "Built a 30-case adversarial evaluation suite measuring clinical-safety violations such as unauthorized advice and missed escalation, raising the guardrail pass rate from 71% to 96% over four rounds.",
+      "Engineered a multi-turn clinical conversation REST API using Python and FastAPI, integrating Claude to power a state-machine planner with per-state scoped prompts and code-enforced escalation overrides for autonomous post-discharge check-ins.",
+      "Built a 30-case adversarial safety evaluation harness targeting unauthorized medical advice, missed escalation, and persona breaks, using LangSmith to trace and compare runs across 4 prompt-iteration rounds, raising the guardrail pass rate from 70% to 88%.",
     ],
     link: "https://github.com/AnvayP1998/ClinicalConversation",
   },
@@ -87,12 +88,12 @@ const projects = [
     link: "https://github.com/AnvayP1998/carcassonne-ai",
   },
   {
-    name: "DataInsight AI — Production RAG Copilot",
+    name: "DataInsight AI — RAG Platform for Financial Research",
     period: "Feb 2026 – Apr 2026",
-    stack: ["React", "FastAPI", "Python", "PostgreSQL", "Qdrant", "Claude API", "RAG"],
+    stack: ["React", "FastAPI", "Python", "PostgreSQL", "Qdrant", "SSE", "RAG"],
     bullets: [
-      "Analysts lost minutes hunting for answers across 200+ scattered documents, so I built a full-stack AI platform (React, FastAPI, PostgreSQL, Qdrant) with an ingestion, chunking, embedding, and retrieval pipeline that answers questions with cited Claude responses in 2 seconds.",
-      "Engineered an async RAG pipeline streaming Claude API tokens over SSE that cut time-to-first-response 40x from 12 seconds to 300ms, tuning retrieval and model selection to control latency and token spend.",
+      "Built a full-stack RAG platform backed by a PostgreSQL and Qdrant data layer for financial analysts, so they could get a cited, traceable answer from dense research documents in seconds instead of searching through files by hand, returning answers across 200+ documents in 2 seconds.",
+      "Cut time-to-first-response 40x (12s to 300ms) with an async streaming pipeline (SSE, FastAPI), tuning retrieval and model selection for cost.",
     ],
     link: "https://github.com/AnvayP1998/CSCI_6234_Spring_2026_G14",
   },
@@ -129,12 +130,14 @@ const projects = [
 ];
 
 const skills = {
-  "Languages": ["Python", "C#", "Go", "JavaScript", "TypeScript", "SQL"],
-  "Backend": [".NET", "ASP.NET Core", "Node.js", "REST APIs", "GraphQL"],
-  "Frontend": ["React", "Next.js", "Redux", "HTML", "CSS"],
-  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Git", "Linux", "CI/CD"],
-  "Data & Messaging": ["PostgreSQL", "Oracle", "SQL Server", "MongoDB", "Redis", "Kafka", "RabbitMQ"],
-  "AI & Engineering": ["RAG", "LLM Integration", "LangSmith", "Embeddings", "Vector Search", "Microservices", "Distributed Systems", "API Design", "OAuth 2.0", "JWT", "RBAC", "OpenTelemetry", "Grafana", "Jest", "Postman", "pytest"],
+  "Languages & Fundamentals": ["Java", "Python", "JavaScript", "TypeScript", "SQL", "OOP", "DSA"],
+  "Backend & Frontend": ["Spring Boot", "FastAPI", "Node.js", "REST APIs", "Microservices", "React", "Angular", "Bash"],
+  "AI & GenAI": ["LLMs", "RAG", "LangChain", "LangGraph", "MCP", "AI Agents", "Prompt Engineering", "Hugging Face"],
+  "ML & Retrieval": ["Embeddings", "Vector Databases", "Semantic Search", "Hybrid Search", "LLM Evaluation"],
+  "Databases & Messaging": ["PostgreSQL", "MongoDB", "Oracle", "Redis", "Kafka", "Qdrant", "MySQL"],
+  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform", "CI/CD", "Linux"],
+  "Monitoring & Testing": ["OpenTelemetry", "Prometheus", "Grafana", "JUnit", "Mockito", "PyTest"],
+  "Architecture & Engineering": ["System Design", "Distributed Systems", "Event-Driven Architecture", "Design Patterns"],
 };
 
 export default function Home() {
@@ -151,11 +154,11 @@ export default function Home() {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-slate-900 dark:text-white">
-              Software Engineer building backend and full-stack systems, with recent work in LLMs and RAG.
+              Software Engineer building scalable distributed systems and AI-powered software.
             </h1>
 
             <p className="mt-5 text-base sm:text-lg text-slate-700/80 dark:text-slate-200/70 max-w-2xl">
-              5+ years of experience developing backend and full-stack applications across financial services, healthcare, and retail products. Experienced with C#/.NET, Python, React, JavaScript, Node.js, AWS, Kubernetes, PostgreSQL, REST APIs, and distributed systems, with recent work integrating LLMs, RAG, embeddings, and retrieval workflows into production applications. MS-CS, GWU (May 2026).
+              5+ years of experience building scalable distributed systems, cloud-based applications, and AI-powered software. Proficient in Java, Python, Spring Boot, FastAPI, React, Angular, AWS, Kubernetes, Kafka, and PostgreSQL, with expertise in microservices, REST APIs, and event-driven architecture. Hands-on with Generative AI, RAG pipelines, LangChain, LangGraph, MCP integrations, vector search, and LLM-powered applications. MS-CS, GWU (May 2026).
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -165,7 +168,7 @@ export default function Home() {
                 <span className="text-slate-900 dark:text-white">Available now</span>
               </span>
 
-              {["Full-Stack", "Distributed Systems", "AI / LLM", "PostgreSQL"].map((t) => (
+              {["Java / Spring Boot", "Distributed Systems", "GenAI / RAG", "Microservices"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full px-3 py-1.5 text-sm shadow-sm ring-1 ring-black/5 dark:ring-white/10
@@ -201,9 +204,9 @@ export default function Home() {
           {/* Metrics */}
           <div className="lg:col-span-4">
             <div className="grid gap-3">
-              <Metric title="5+ Years" desc="Backend and full-stack engineering across FinTech, healthcare, and retail" />
-              <Metric title="2,000+" desc="Transactions/sec processed by order-lifecycle services at Phillip Capital" />
-              <Metric title="700K+" desc="Documents indexed by RAG pipelines built at Walmart" />
+              <Metric title="5+ Years" desc="Backend and distributed systems engineering across FinTech, healthcare, and retail" />
+              <Metric title="2x" desc="Trade processing throughput via Kafka event-driven workflows at Phillip Capital" />
+              <Metric title="-250 ms" desc="p95 latency cut on Sparky, Walmart's AI shopping assistant" />
             </div>
           </div>
         </div>
@@ -311,9 +314,9 @@ export default function Home() {
 
         <Card className="mt-6" tint="rose">
           <p className="text-sm sm:text-base text-slate-700/85 dark:text-slate-200/70 leading-relaxed max-w-3xl">
-            I’m Anvay Paralikar, a Software Engineer with 5+ years of experience building backend and full-stack
-            applications across financial services, healthcare, and retail. My core experience is in C#/.NET, Python,
-            React, JavaScript, Node.js, AWS, Kubernetes, PostgreSQL, REST APIs, and distributed systems, and I enjoy
+            I’m Anvay Paralikar, a Software Engineer with 5+ years of experience building scalable distributed systems,
+            cloud-based applications, and AI-powered software across financial services, healthcare, and retail. My core
+            experience is in Java, Python, Spring Boot, FastAPI, React, Angular, AWS, Kubernetes, Kafka, and PostgreSQL, and I enjoy
             working on systems where performance, reliability, and maintainability matter — from high-throughput
             transaction processing and API design to production applications serving large datasets and user bases.
             I hold an MS in Computer Science from George Washington University (May 2026), and I'm particularly
@@ -357,8 +360,8 @@ export default function Home() {
               </p>
               <p>
                 <span className="text-slate-700/70 dark:text-slate-200/60">Phone:</span>{" "}
-                <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="tel:+15714570595">
-                  +1 (571) 457-0595
+                <a className="underline underline-offset-4 hover:text-slate-900 dark:hover:text-white" href="tel:+15716271303">
+                  +1 (571) 627-1303
                 </a>
               </p>
             </div>

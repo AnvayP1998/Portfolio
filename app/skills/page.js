@@ -1,10 +1,12 @@
 const groups = [
-  { title: "Languages", items: ["Python", "C#", "Go", "JavaScript", "TypeScript", "SQL"] },
-  { title: "Backend", items: [".NET", "ASP.NET Core", "Node.js", "REST APIs", "GraphQL"] },
-  { title: "Frontend", items: ["React", "Next.js", "Redux", "HTML", "CSS"] },
-  { title: "Cloud & DevOps", items: ["AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Git", "Linux", "CI/CD"] },
-  { title: "Data & Messaging", items: ["PostgreSQL", "Oracle", "SQL Server", "MongoDB", "Redis", "Kafka", "RabbitMQ"] },
-  { title: "AI & Engineering", items: ["RAG", "LLM Integration", "LangSmith", "Embeddings", "Vector Search", "Microservices", "Distributed Systems", "API Design", "OAuth 2.0", "JWT", "RBAC", "OpenTelemetry", "Grafana", "Jest", "Postman", "pytest"] },
+  { title: "Languages & Fundamentals", items: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "OOP", "DSA"] },
+  { title: "Backend & Frontend", items: ["Spring Boot", "FastAPI", "Node.js", "REST APIs", "Microservices", "React", "Angular", "Bash"] },
+  { title: "AI & GenAI", items: ["LLMs", "RAG", "LangChain", "LangGraph", "MCP", "AI Agents", "Prompt Engineering", "Hugging Face"] },
+  { title: "ML & Retrieval", items: ["Embeddings", "Vector Databases", "Semantic Search", "Hybrid Search", "LLM Evaluation"] },
+  { title: "Databases & Messaging", items: ["PostgreSQL", "MongoDB", "Oracle", "Redis", "Kafka", "Qdrant", "MySQL"] },
+  { title: "Cloud & DevOps", items: ["AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform", "CI/CD", "Linux"] },
+  { title: "Monitoring & Testing", items: ["OpenTelemetry", "Prometheus", "Grafana", "JUnit", "Mockito", "PyTest"] },
+  { title: "Architecture & Engineering", items: ["System Design", "Distributed Systems", "Event-Driven Architecture", "Design Patterns"] },
 ];
 
 export default function SkillsPage() {

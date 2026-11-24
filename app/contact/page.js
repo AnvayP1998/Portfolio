@@ -16,8 +16,8 @@ export default function ContactPage() {
           <a className="block glass glass-hover rounded-2xl px-5 py-4" href="https://linkedin.com/in/anvayparalikar" target="_blank">
             LinkedIn: linkedin.com/in/anvayparalikar ↗
           </a>
-          <a className="block glass glass-hover rounded-2xl px-5 py-4" href="tel:+15714570595">
-            Phone: +1 (571) 457-0595
+          <a className="block glass glass-hover rounded-2xl px-5 py-4" href="tel:+15716271303">
+            Phone: +1 (571) 627-1303
           </a>
         </div>
       </div>
